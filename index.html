@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cole - Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--NAVBAR-->
+        <nav id="navbar">
+            <a href="#" style="text-decoration: none; color: white;"><h1>cole</h1></a>
+            <ul id="side-menu">
+                <li><a href="#about">about</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#footer">contact</a></li>
+                <img src="img/close_menu.svg" onclick="closemenu()">
+            </ul>
+            <img src="img/open_menu.svg" onclick="openmenu()">
+        </nav>
+        <div id="header" class="container">
+            <div id="header-text">
+                <h1>hey, it's me <span style="color: #ff004f">cole</span></h1>
+                <p>competitive programmer &<br>game developer</p>
+            </div>
+        </div>
+        
+        <!--ABOUT ME-->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div id="about-col-1">
+                        <img src="img/channel_icon.jpg">
+                    </div>
+                    <div id="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex lorem, placerat nec mauris id, gravida rhoncus augue. In maximus condimentum magna, a ultricies quam imperdiet non. Quisque condimentum nisl tortor, ac laoreet eros suscipit sed. Sed in convallis arcu, ut mollis est. In at eros ut ipsum consequat posuere a at tellus.</p>
+
+                        <div id="tab-titles">
+                            <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-link" onclick="opentab('pets')">Pets</p>
+                            <p class="tab-link" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>A</span><br>Lorem ipsum dolor sat amet</li>
+                                <li><span>B</span><br>Lorem ipsum dolor sat amet</li>
+                                <li><span>C</span><br>Lorem ipsum dolor sat amet</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="pets">
+                            <ul>
+                                <li><span>1</span><br>Lorem ipsum dolor sat amet</li>
+                                <li><span>2</span><br>Lorem ipsum dolor sat amet</li>
+                                <li><span>3</span><br>Lorem ipsum dolor sat ametshoobity boop</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>a</span><br>Lorem ipsum dolor sat amet</li>
+                                <li><span>b</span><br>Lorem ipsum dolor sat amet</li>
+                                <li><span>c</span><br>Lorem ipsum dolor sat amet</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--SERVICES-->
+        <div id="hobbies">
+            <div class="container">
+                <h1 class="subtitle">My Hobbies</h1>
+                <div id="hobby-list">
+                    <div>
+                        <img src="img/controller.svg" class="icon">
+                        <h2>Game Developer</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex lorem, placerat nec mauris id, gravida rhoncus augue. In maximus condimentum magna, a ultricies quam imperdiet non. Quisque condimentum nisl tortor, ac laoreet eros suscipit sed. Sed in convallis arcu, ut mollis est. In at eros ut ipsum consequat posuere a at tellus.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <img src="img/html_tag.svg" class="icon">
+                        <h2>Competitive<br>Programmer</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex lorem, placerat nec mauris id, gravida rhoncus augue. In maximus condimentum magna, a ultricies quam imperdiet non. Quisque condimentum nisl tortor, ac laoreet eros suscipit sed. Sed in convallis arcu, ut mollis est. In at eros ut ipsum consequat posuere a at tellus.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <img src="img/blender.svg" class="icon">
+                        <h2>3D Modeler</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex lorem, placerat nec mauris id, gravida rhoncus augue. In maximus condimentum magna, a ultricies quam imperdiet non. Quisque condimentum nisl tortor, ac laoreet eros suscipit sed. Sed in convallis arcu, ut mollis est. In at eros ut ipsum consequat posuere a at tellus.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--PORTFOLIO-->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="subtitle">My Projects</h1>
+                <div id="project-list">
+                    <div class="project">
+                        <img src="img/coming_soon.jpg">
+                        <div class="layer">
+                            <h3>Coming Soon</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex lorem, placerat nec mauris id, gravida rhoncus augue. In maximus condimentum magna, a ultricies quam imperdiet non. Quisque condimentum nisl tortor, ac laoreet eros suscipit sed. Sed in convallis arcu, ut mollis est. In at eros ut ipsum consequat posuere a at tellus.</p>
+                            <a href="#"><img src="img/link.svg"></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="img/coming_soon.jpg">
+                        <div class="layer">
+                            <h3>Coming Soon</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex lorem, placerat nec mauris id, gravida rhoncus augue. In maximus condimentum magna, a ultricies quam imperdiet non. Quisque condimentum nisl tortor, ac laoreet eros suscipit sed. Sed in convallis arcu, ut mollis est. In at eros ut ipsum consequat posuere a at tellus.</p>
+                            <a href="#"><img src="img/link.svg"></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="img/coming_soon.jpg">
+                        <div class="layer">
+                            <h3>Coming Soon</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex lorem, placerat nec mauris id, gravida rhoncus augue. In maximus condimentum magna, a ultricies quam imperdiet non. Quisque condimentum nisl tortor, ac laoreet eros suscipit sed. Sed in convallis arcu, ut mollis est. In at eros ut ipsum consequat posuere a at tellus.</p>
+                            <a href="#"><img src="img/link.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+
+        <div id="footer">made by cole.</div>
+
+        <script src="menu.js"></script>
+        <script src="navbar.js"></script>
+        <script src="eye_tracking.js"></script>
+        <script src="about_me.js"></script>
+    </body>
+</html>
