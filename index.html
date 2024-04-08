@@ -8,12 +8,12 @@
     </head>
     <body>
         <!--NAVBAR-->
-        <nav id="navbar">
+        <nav id="navbar" class="container">
             <a href="#" style="text-decoration: none; color: white;"><h1>cole</h1></a>
             <ul id="side-menu">
                 <li><a href="#header">home</a></li>
                 <li><a href="#about">about</a></li>
-                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#portfolio">projects</a></li>
                 <li><a href="#footer">contact</a></li>
                 <img src="img/close_menu.svg" onclick="closemenu()">
             </ul>
@@ -27,113 +27,144 @@
         </div>
         
         <!--ABOUT ME-->
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div id="about-col-1">
-                        <img src="img/channel_icon.jpg">
-                    </div>
-                    <div id="about-col-2">
-                        <h1 class="subtitle">About Me</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex lorem, placerat nec mauris id, gravida rhoncus augue. In maximus condimentum magna, a ultricies quam imperdiet non. Quisque condimentum nisl tortor, ac laoreet eros suscipit sed. Sed in convallis arcu, ut mollis est. In at eros ut ipsum consequat posuere a at tellus.</p>
+        <div class="banner" id="about" style="rotate: 2deg; transform: translateY(-20px)">
+            <h1 class="scroll-left">ABOUT ME</h1>
+            <h1 class="scroll-left">ABOUT ME</h1>
+            <h1 class="scroll-left">ABOUT ME</h1>
+            <h1 class="scroll-left">ABOUT ME</h1>
+            <h1 class="scroll-left">ABOUT ME</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="about-col-1">
+                    <img src="img/channel_icon.jpg">
+                </div>
+                <div id="about-col-2">
+                    <h1>Hello World!👋</h1>
+                    <p>
+                        My name is Cole and I'm a 17 year old programmer, 3D artist and aspiring game developer from California.
+                        I'm currently working on an action-packed train combat game called War Engine Battlegrounds, which will be completely free on Steam!
+                        Check out my YouTube channel where I post updates from time to time.
+                    </p>
 
-                        <div id="tab-titles">
-                            <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-link" onclick="opentab('pets')">Pets</p>
-                            <p class="tab-link" onclick="opentab('education')">Education</p>
+                    <div id="tab-titles">
+                        <p class="tab-link active-link" onclick="opentab(0)">Skills</p>
+                        <p class="tab-link" onclick="opentab(1)">Education</p>
+                        <p class="tab-link" onclick="opentab(2)">Pets</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <div>
+                            <img src="img/unity.svg" class="icon inverted">
+                            <div class="layer"><p>UNITY</p></div>
                         </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>A</span><br>Lorem ipsum dolor sat amet</li>
-                                <li><span>B</span><br>Lorem ipsum dolor sat amet</li>
-                                <li><span>C</span><br>Lorem ipsum dolor sat amet</li>
-                            </ul>
+                        <div>
+                            <img src="img/cpp.svg" class="icon">
+                            <div class="layer"><p>C++</p></div>
                         </div>
-                        <div class="tab-contents" id="pets">
-                            <ul>
-                                <li><span>1</span><br>Lorem ipsum dolor sat amet</li>
-                                <li><span>2</span><br>Lorem ipsum dolor sat amet</li>
-                                <li><span>3</span><br>Lorem ipsum dolor sat ametshoobity boop</li>
-                            </ul>
+                        <div>
+                            <img src="img/csharp.svg" class="icon">
+                            <div class="layer"><p>C#</p></div>
                         </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>a</span><br>Lorem ipsum dolor sat amet</li>
-                                <li><span>b</span><br>Lorem ipsum dolor sat amet</li>
-                                <li><span>c</span><br>Lorem ipsum dolor sat amet</li>
-                            </ul>
+                        <div>
+                            <img src="img/python.svg" class="icon">
+                            <div class="layer"><p>PYTHON</p></div>
                         </div>
+                        <div>
+                            <img src="img/blender.svg" class="icon inverted">
+                            <div class="layer"><p>BLENDER</p></div>
+                        </div>
+                        <div>
+                            <img src="img/git.svg" class="icon">
+                            <div class="layer"><p>GIT</p></div>
+                        </div>
+                        <div>
+                            <img src="img/html.svg" class="icon">
+                            <div class="layer"><p>HTML</p></div>
+                        </div>
+                        <div>
+                            <img src="img/css.svg" class="icon">
+                            <div class="layer"><p>CSS</p></div>
+                        </div>
+                        <div>
+                            <img src="img/javascript.svg" class="icon">
+                            <div class="layer"><p>JAVA<br>SCRIPT</p></div>
+                        </div>
+                    </div>
+                    <div class="tab-contents">
+                        UC Santa Cruz class of 2028!
+                    </div>
+                    <div class="tab-contents">
+                        
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--SERVICES-->
-        <div id="hobbies">
-            <div class="container">
-                <h1 class="subtitle">My Hobbies</h1>
-                <div id="hobby-list">
-                    <div>
-                        <img src="img/controller.svg" class="icon">
-                        <h2>Game Developer</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex lorem, placerat nec mauris id, gravida rhoncus augue. In maximus condimentum magna, a ultricies quam imperdiet non. Quisque condimentum nisl tortor, ac laoreet eros suscipit sed. Sed in convallis arcu, ut mollis est. In at eros ut ipsum consequat posuere a at tellus.</p>
-                        <a href="#">Learn more</a>
-                    </div>
-                    <div>
-                        <img src="img/html_tag.svg" class="icon">
-                        <h2>Competitive<br>Programmer</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex lorem, placerat nec mauris id, gravida rhoncus augue. In maximus condimentum magna, a ultricies quam imperdiet non. Quisque condimentum nisl tortor, ac laoreet eros suscipit sed. Sed in convallis arcu, ut mollis est. In at eros ut ipsum consequat posuere a at tellus.</p>
-                        <a href="#">Learn more</a>
-                    </div>
-                    <div>
-                        <img src="img/blender.svg" class="icon">
-                        <h2>3D Modeler</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex lorem, placerat nec mauris id, gravida rhoncus augue. In maximus condimentum magna, a ultricies quam imperdiet non. Quisque condimentum nisl tortor, ac laoreet eros suscipit sed. Sed in convallis arcu, ut mollis est. In at eros ut ipsum consequat posuere a at tellus.</p>
-                        <a href="#">Learn more</a>
-                    </div>
-                </div>
+        <!--HOBBIES-->
+        <div id="hobby-list" class="container">
+            <div>
+                <img src="img/controller.svg" class="icon inverted">
+                <h2>Game Developer</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex lorem, placerat nec mauris id, gravida rhoncus augue. In maximus condimentum magna, a ultricies quam imperdiet non. Quisque condimentum nisl tortor, ac laoreet eros suscipit sed. Sed in convallis arcu, ut mollis est. In at eros ut ipsum consequat posuere a at tellus.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <img src="img/html_tag.svg" class="icon inverted">
+                <h2>Competitive<br>Programmer</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex lorem, placerat nec mauris id, gravida rhoncus augue. In maximus condimentum magna, a ultricies quam imperdiet non. Quisque condimentum nisl tortor, ac laoreet eros suscipit sed. Sed in convallis arcu, ut mollis est. In at eros ut ipsum consequat posuere a at tellus.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <img src="img/blender.svg" class="icon inverted">
+                <h2>3D Modeler</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex lorem, placerat nec mauris id, gravida rhoncus augue. In maximus condimentum magna, a ultricies quam imperdiet non. Quisque condimentum nisl tortor, ac laoreet eros suscipit sed. Sed in convallis arcu, ut mollis est. In at eros ut ipsum consequat posuere a at tellus.</p>
+                <a href="#">Learn more</a>
             </div>
         </div>
 
         <!--PORTFOLIO-->
-        <div id="portfolio">
-            <div class="container">
-                <h1 class="subtitle">My Projects</h1>
-                <div id="project-list">
-                    <div class="project">
-                        <img src="img/coming_soon.jpg">
-                        <div class="layer">
-                            <h3>Coming Soon</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex lorem, placerat nec mauris id, gravida rhoncus augue. In maximus condimentum magna, a ultricies quam imperdiet non. Quisque condimentum nisl tortor, ac laoreet eros suscipit sed. Sed in convallis arcu, ut mollis est. In at eros ut ipsum consequat posuere a at tellus.</p>
-                            <a href="#"><img src="img/link.svg"></a>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img src="img/coming_soon.jpg">
-                        <div class="layer">
-                            <h3>Coming Soon</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex lorem, placerat nec mauris id, gravida rhoncus augue. In maximus condimentum magna, a ultricies quam imperdiet non. Quisque condimentum nisl tortor, ac laoreet eros suscipit sed. Sed in convallis arcu, ut mollis est. In at eros ut ipsum consequat posuere a at tellus.</p>
-                            <a href="#"><img src="img/link.svg"></a>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img src="img/coming_soon.jpg">
-                        <div class="layer">
-                            <h3>Coming Soon</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex lorem, placerat nec mauris id, gravida rhoncus augue. In maximus condimentum magna, a ultricies quam imperdiet non. Quisque condimentum nisl tortor, ac laoreet eros suscipit sed. Sed in convallis arcu, ut mollis est. In at eros ut ipsum consequat posuere a at tellus.</p>
-                            <a href="#"><img src="img/link.svg"></a>
-                        </div>
+        <div class="banner" id="portfolio" style="transform: rotate(-2deg);">
+            <h1 class="scroll-right">MY PROJECTS</h1>
+            <h1 class="scroll-right">MY PROJECTS</h1>
+            <h1 class="scroll-right">MY PROJECTS</h1>
+            <h1 class="scroll-right">MY PROJECTS</h1>
+            <h1 class="scroll-right">MY PROJECTS</h1>
+        </div>
+        <div class="container">
+            <div id="project-list">
+                <div class="project">
+                    <img src="img/coming_soon.jpg">
+                    <div class="layer">
+                        <h3>Coming Soon</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex lorem, placerat nec mauris id, gravida rhoncus augue. In maximus condimentum magna, a ultricies quam imperdiet non. Quisque condimentum nisl tortor, ac laoreet eros suscipit sed. Sed in convallis arcu, ut mollis est. In at eros ut ipsum consequat posuere a at tellus.</p>
+                        <a href="#"><img src="img/link.svg"></a>
                     </div>
                 </div>
-                <a href="#" class="btn">See more</a>
+                <div class="project">
+                    <img src="img/coming_soon.jpg">
+                    <div class="layer">
+                        <h3>Coming Soon</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex lorem, placerat nec mauris id, gravida rhoncus augue. In maximus condimentum magna, a ultricies quam imperdiet non. Quisque condimentum nisl tortor, ac laoreet eros suscipit sed. Sed in convallis arcu, ut mollis est. In at eros ut ipsum consequat posuere a at tellus.</p>
+                        <a href="#"><img src="img/link.svg"></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/coming_soon.jpg">
+                    <div class="layer">
+                        <h3>Coming Soon</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex lorem, placerat nec mauris id, gravida rhoncus augue. In maximus condimentum magna, a ultricies quam imperdiet non. Quisque condimentum nisl tortor, ac laoreet eros suscipit sed. Sed in convallis arcu, ut mollis est. In at eros ut ipsum consequat posuere a at tellus.</p>
+                        <a href="#"><img src="img/link.svg"></a>
+                    </div>
+                </div>
             </div>
+            <a href="#" class="btn">See more</a>
         </div>
 
         <div id="footer">made by cole.</div>
 
         <script src="menu.js"></script>
         <script src="navbar.js"></script>
-        <script src="eye_tracking.js"></script>
+        <script src="eye_movement.js"></script>
         <script src="about_me.js"></script>
     </body>
 </html>
