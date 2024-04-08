@@ -27,76 +27,77 @@
         </div>
         
         <!--ABOUT ME-->
-        <div class="banner" id="about" style="rotate: 2deg; transform: translateY(-20px)">
+        <div class="banner" id="about" style="rotate: 2deg; transform: translateY(-30px)">
             <h1 class="scroll-left">ABOUT ME</h1>
             <h1 class="scroll-left">ABOUT ME</h1>
             <h1 class="scroll-left">ABOUT ME</h1>
             <h1 class="scroll-left">ABOUT ME</h1>
             <h1 class="scroll-left">ABOUT ME</h1>
         </div>
-        <div class="container">
-            <div class="row">
-                <div id="about-col-1">
-                    <img src="img/channel_icon.jpg">
+        <div id="about-info">
+            <img src="img/channel_icon.jpg">
+            <div>
+                <h1>Hello World!👋</h1>
+                <p>
+                    My name is Cole and I'm a 17 year old programmer, 3D artist and aspiring game developer from California.
+                    I'm currently working on an action-packed train combat game called War Engine Battlegrounds, which will be completely free on Steam!
+                    Check out my YouTube channel and discord server where I post updates from time to time.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div id="tab-titles">
+                <p class="tab-link active-link" onclick="opentab(0)">Skills</p>
+                <p class="tab-link" onclick="opentab(1)">Education</p>
+                <p class="tab-link" onclick="opentab(2)">Pets</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <div>
+                    <img src="img/unity.svg" class="icon inverted">
+                    <div class="layer"><p>UNITY</p></div>
                 </div>
-                <div id="about-col-2">
-                    <h1>Hello World!👋</h1>
-                    <p>
-                        My name is Cole and I'm a 17 year old programmer, 3D artist and aspiring game developer from California.
-                        I'm currently working on an action-packed train combat game called War Engine Battlegrounds, which will be completely free on Steam!
-                        Check out my YouTube channel where I post updates from time to time.
-                    </p>
-
-                    <div id="tab-titles">
-                        <p class="tab-link active-link" onclick="opentab(0)">Skills</p>
-                        <p class="tab-link" onclick="opentab(1)">Education</p>
-                        <p class="tab-link" onclick="opentab(2)">Pets</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <div>
-                            <img src="img/unity.svg" class="icon inverted">
-                            <div class="layer"><p>UNITY</p></div>
-                        </div>
-                        <div>
-                            <img src="img/cpp.svg" class="icon">
-                            <div class="layer"><p>C++</p></div>
-                        </div>
-                        <div>
-                            <img src="img/csharp.svg" class="icon">
-                            <div class="layer"><p>C#</p></div>
-                        </div>
-                        <div>
-                            <img src="img/python.svg" class="icon">
-                            <div class="layer"><p>PYTHON</p></div>
-                        </div>
-                        <div>
-                            <img src="img/blender.svg" class="icon inverted">
-                            <div class="layer"><p>BLENDER</p></div>
-                        </div>
-                        <div>
-                            <img src="img/git.svg" class="icon">
-                            <div class="layer"><p>GIT</p></div>
-                        </div>
-                        <div>
-                            <img src="img/html.svg" class="icon">
-                            <div class="layer"><p>HTML</p></div>
-                        </div>
-                        <div>
-                            <img src="img/css.svg" class="icon">
-                            <div class="layer"><p>CSS</p></div>
-                        </div>
-                        <div>
-                            <img src="img/javascript.svg" class="icon">
-                            <div class="layer"><p>JAVA<br>SCRIPT</p></div>
-                        </div>
-                    </div>
-                    <div class="tab-contents">
-                        UC Santa Cruz class of 2028!
-                    </div>
-                    <div class="tab-contents">
-                        
-                    </div>
+                <div>
+                    <img src="img/cpp.svg" class="icon">
+                    <div class="layer"><p>C++</p></div>
                 </div>
+                <div>
+                    <img src="img/csharp.svg" class="icon">
+                    <div class="layer"><p>C#</p></div>
+                </div>
+                <div>
+                    <img src="img/python.svg" class="icon">
+                    <div class="layer"><p>PYTHON</p></div>
+                </div>
+                <div>
+                    <img src="img/blender.svg" class="icon inverted">
+                    <div class="layer"><p>BLENDER</p></div>
+                </div>
+                <div>
+                    <img src="img/git.svg" class="icon">
+                    <div class="layer"><p>GIT</p></div>
+                </div>
+                <div>
+                    <img src="img/html.svg" class="icon">
+                    <div class="layer"><p>HTML</p></div>
+                </div>
+                <div>
+                    <img src="img/css.svg" class="icon">
+                    <div class="layer"><p>CSS</p></div>
+                </div>
+                <div>
+                    <img src="img/javascript.svg" class="icon">
+                    <div class="layer"><p>JAVA<br>SCRIPT</p></div>
+                </div>
+                <div>
+                    <img src="img/java.svg" class="icon">
+                    <div class="layer"><p>JAVA</p></div>
+                </div>
+            </div>
+            <div class="tab-contents">
+                UC Santa Cruz class of 2028!
+            </div>
+            <div class="tab-contents">
+                
             </div>
         </div>
 
@@ -116,7 +117,7 @@
             </div>
             <div>
                 <img src="img/blender.svg" class="icon inverted">
-                <h2>3D Modeler</h2>
+                <h2>3D Artist</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex lorem, placerat nec mauris id, gravida rhoncus augue. In maximus condimentum magna, a ultricies quam imperdiet non. Quisque condimentum nisl tortor, ac laoreet eros suscipit sed. Sed in convallis arcu, ut mollis est. In at eros ut ipsum consequat posuere a at tellus.</p>
                 <a href="#">Learn more</a>
             </div>
