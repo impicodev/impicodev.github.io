@@ -34,14 +34,14 @@
             <h1 class="scroll-left">ABOUT ME</h1>
             <h1 class="scroll-left">ABOUT ME</h1>
         </div>
-        <div id="about-info">
+        <div class="container" id="about-info">
             <img src="img/channel_icon.jpg">
             <div>
                 <h1>Hello World!👋</h1>
                 <p>
                     My name is Cole and I'm a 17 year old programmer, 3D artist and aspiring game developer from California.
                     I'm currently working on an action-packed train combat game called War Engine Battlegrounds, which will be completely free on Steam!
-                    Check out my YouTube channel and discord server where I post updates from time to time.
+                    Check out my <a href="https://www.youtube.com/@colecancode" style="color: #ff004f" target="_blank">YouTube channel</a> and <a href="https://discord.gg/zT74yNq93s" style="color: #002bff" target="_blank">discord server</a> where I post updates from time to time.
                 </p>
             </div>
         </div>
@@ -52,6 +52,21 @@
                 <p class="tab-link" onclick="opentab(2)">Pets</p>
             </div>
             <div class="tab-contents active-tab" id="skills">
+                <script>
+                    container = document.getElementById("skills");
+
+                    function upd() {
+                        var size = container.children[1].clientWidth + 20;
+                        var perRow = Math.floor((window.innerWidth - 40) / size);
+                        var tiles = container.children.length - 1;
+                        var rows = Math.ceil(tiles / perRow);
+                        perRow = Math.ceil(tiles / rows);
+                        container.style.width = `${perRow * (size + 20) - 20}px`;
+                    }
+
+                    window.addEventListener('load', upd);
+                    window.addEventListener('resize', upd);
+                </script>
                 <div>
                     <img src="img/unity.svg" class="icon inverted">
                     <div class="layer"><p>UNITY</p></div>
@@ -93,8 +108,9 @@
                     <div class="layer"><p>JAVA</p></div>
                 </div>
             </div>
-            <div class="tab-contents">
-                UC Santa Cruz class of 2028!
+            <div class="tab-contents container" id="education">
+                <h1>UC Santa Cruz class of 2028!</h1>
+                <img src="img/slug.png">
             </div>
             <div class="tab-contents">
                 
