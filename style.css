@@ -160,11 +160,15 @@ body {
 #header-text {
     margin-top: 8vh;
     font-size: 5vmin;
-    width: 55%;
+    width: 50%;
 
     h1 {
-        font-size: 12vmin;
+        font-size: 15vmin;
         margin-top: 20px;
+    }
+
+    p {
+        width: 45vw;
     }
 }
 
@@ -186,6 +190,7 @@ body {
 
     h1 {
         font-family: 'mono', sans-serif;
+        text-shadow: 5px 5px #ff004f;
     }
 
     p, a {
@@ -283,12 +288,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    text-align: center;
 }
 
 #education {
     h1 {
-        font-family: 'manrope', sans-serif;
+        font-family: 'monument', sans-serif;
         font-size: 10vmin;
+        text-shadow: 8px 8px #ff004f;
         display: inline;
     }
 
@@ -305,7 +312,7 @@ body {
     margin: 60px 0;
 
     div {
-        min-width: 320px;
+        min-width: 300px;
         flex-basis: 30%;
         flex-grow: 1;
         background: #262626;
@@ -313,18 +320,29 @@ body {
         font-weight: 300;
         border-radius: 10px;
         transition: 0.5s;
+        display: table;
+
+        a, p, h2 {
+            font-family: 'manrope', sans-serif;
+        }
 
         a {
             text-decoration: none;
             color: white;
-            font-size: 14px;
-            margin-top: 20px;
-            display: inline-block;
+            font-size: max(22px, 3vmin);
+            font-weight: 500;
+            display: table-row;
+            vertical-align: bottom;
+        }
+
+        p {
+            font-size: max(20px, 2.5vmin);
+            margin-bottom: 20px;
         }
 
         h2 {
-            font-size: 35px;
-            font-weight: 500;
+            font-size: max(30px, 4vmin);
+            font-weight: 550;
             margin-top: 30px;
             margin-bottom: 15px;
         }
@@ -461,12 +479,11 @@ body {
 
     /*--HEADER--*/
     #header-text {
-        font-size: 24px;
         margin-top: 5%;
         width: 100%;
 
         h1 {
-            font-size: 60px;
+            font-size: 15vmin;
         }
     }
 
@@ -501,6 +518,13 @@ body {
     /*--ABOUT ME--*/
     #about-info img {
         display: none;
+    }
+
+    #education {
+        flex-direction: column-reverse;
+        h1 {
+            font-size: 12vmin;
+        }
     }
 
     /*--HOBBIES--*/
