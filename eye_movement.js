@@ -4,10 +4,10 @@ var mouseX = 0, mouseY = 0;
 var scale = Math.max(window.innerWidth / 3840, window.innerHeight / 2880);
 
 function update_eyes() {
-    var left_dx = mouseX - (window.innerWidth / 2 + 440 * scale);
-    var left_dy = mouseY - (window.innerHeight / 2 - 210 * scale + window.scrollY / parallax);
-    var right_dx = mouseX - (window.innerWidth / 2 + 730 * scale);
-    var right_dy = mouseY - (window.innerHeight / 2 - 200 * scale + window.scrollY / parallax);
+    var left_dx = mouseX - (window.innerWidth / 2 + 260 * scale);
+    var left_dy = mouseY - (window.innerHeight / 2 - 240 * scale + window.scrollY / parallax);
+    var right_dx = mouseX - (window.innerWidth / 2 + 590 * scale);
+    var right_dy = mouseY - (window.innerHeight / 2 - 220 * scale + window.scrollY / parallax);
 
     var left_dist = Math.sqrt(left_dx * left_dx + left_dy * left_dy);
     var right_dist = Math.sqrt(right_dx * right_dx + right_dy * right_dy);

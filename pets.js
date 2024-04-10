@@ -1,4 +1,12 @@
 var pets = document.getElementById("pets");
+var middle = 0;
+var vel = 0;
+
+function center_dist(idx) {
+    if (idx < 0 || idx >= pets.children.length) return Infinity;
+    var rect = pets.children[idx].getBoundingClientRect();
+    return window.innerWidth / 2 - (rect.left + rect.right) / 2;
+}
 
 function update_pets() {
     var size = pets.firstElementChild.clientWidth;
@@ -14,18 +22,33 @@ function update_pets() {
     for (image of pets.children) {
         var rect = image.getBoundingClientRect();
         var scale = window.innerWidth / 2 - (rect.right + rect.left) / 2;
-        scale = 1 - Math.abs(scale) / window.innerWidth;
+        scale = 1 - 0.75 * Math.abs(scale) / window.innerWidth;
         image.style.scale = scale;
     }
 }
 
 pets.addEventListener("pointermove", (event) => {
     event.preventDefault();
-    if (getComputedStyle(pets).getPropertyValue("content") == '"dragging"') {
-        pets.scrollLeft -= event.movementX * 2;
+    if (Math.abs(event.movementX) > 0.5 && getComputedStyle(pets).getPropertyValue("content") == '"dragging"') {
+        vel = event.movementX;
+        pets.scrollLeft -= vel;
     }
 });
 
 pets.addEventListener("scroll", update_pets);
 window.addEventListener("resize", update_pets);
+setInterval(() => {
+    if (vel > 0) vel = Math.max(0, vel-2);
+    else vel = Math.min(0, vel+2);
 
+    if (Math.abs(center_dist(middle)) > Math.abs(center_dist(middle + 1))) {
+        console.log("SWITCH MIDDLE");
+        middle++;
+    }
+    else if (Math.abs(center_dist(middle)) > Math.abs(center_dist(middle - 1))) {
+        console.log("SWITCH MIDDLE");
+        middle--;
+    }
+
+    pets.scrollLeft -= vel + center_dist(middle) / 30;
+}, 15);
