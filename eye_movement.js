@@ -1,4 +1,4 @@
-var header = document.getElementById('header');
+var header = document.getElementById("header");
 var parallax = -3, max_dist = 8;
 var mouseX = 0, mouseY = 0;
 var scale = Math.max(window.innerWidth / 3840, window.innerHeight / 2880);
@@ -36,13 +36,13 @@ function update_eyes() {
     header.style.backgroundPositionY = `calc(50% + ${window.scrollY / parallax}px), calc(50% + ${left_y * scale + window.scrollY / parallax}px), calc(50% + ${right_y * scale + window.scrollY / parallax}px), calc(50% + ${window.scrollY / parallax}px)`;
 }
 
-window.addEventListener('resize', () => {
+window.addEventListener("resize", () => {
     scale = Math.max(window.innerWidth / 3840, window.innerHeight / 2880);
     update_eyes();
 });
-document.addEventListener('mousemove', (e) => {
+document.addEventListener("pointermove", (e) => {
     mouseX = e.clientX;
     mouseY = e.clientY;
     update_eyes();
 });
-document.addEventListener('scroll', update_eyes);
+document.addEventListener("scroll", update_eyes);

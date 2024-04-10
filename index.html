@@ -45,12 +45,13 @@
                 </p>
             </div>
         </div>
-        <div>
-            <div id="tab-titles">
-                <p class="tab-link active-link" onclick="opentab(0)">Skills</p>
-                <p class="tab-link" onclick="opentab(1)">Education</p>
-                <p class="tab-link" onclick="opentab(2)">Pets</p>
-            </div>
+
+        <div id="tab-titles">
+            <p class="tab-link active-link" onclick="opentab(0)">Skills</p>
+            <p class="tab-link" onclick="opentab(1)">Education</p>
+            <p class="tab-link" onclick="opentab(2)">Pets</p>
+        </div>
+        <div id="tab-container">
             <div class="tab-contents active-tab" id="skills">
                 <script>
                     container = document.getElementById("skills");
@@ -115,8 +116,16 @@
                 </h1>
                 <img src="img/slug.png">
             </div>
-            <div class="tab-contents">
-                
+            <div class="tab-contents" id="pets">
+                <img src="img/slug.png" style="background-color: blue;">
+                <img src="img/slug.png">
+                <img src="img/slug.png">
+                <img src="img/slug.png">
+                <img src="img/slug.png">
+                <img src="img/slug.png">
+                <img src="img/slug.png">
+                <img src="img/slug.png">
+                <img src="img/slug.png" style="background-color: green;">
             </div>
         </div>
 
@@ -186,5 +195,6 @@
         <script src="navbar.js"></script>
         <script src="eye_movement.js"></script>
         <script src="about_me.js"></script>
+        <script src="pets.js"></script>
     </body>
 </html>

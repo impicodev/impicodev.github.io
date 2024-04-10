@@ -203,6 +203,10 @@ body {
     }
 }
 
+#tab-container {
+    transition: height 1s;
+}
+
 #tab-titles {
     display: flex;
     margin: 20px 0 40px;
@@ -304,6 +308,31 @@ body {
     }
 }
 
+#pets.active-tab {
+    display: flex;
+}
+
+#pets {
+    overflow: scroll hidden;
+    scrollbar-width: none;
+    height: 70vh;
+
+    img {
+        position: relative;
+        cursor: grab;
+        background-color: white;
+        border-radius: 15px;
+    }
+
+    img:active {
+        cursor: grabbing;
+    }
+}
+
+#pets:active {
+    content: 'dragging';
+}
+
 /*--HOBBIES--*/
 #hobby-list {
     display: flex;
@@ -320,6 +349,7 @@ body {
         font-weight: 300;
         border-radius: 10px;
         transition: 0.5s;
+        z-index: 1;
         display: table;
 
         a, p, h2 {
