@@ -19,6 +19,9 @@ function opentab(_idx) {
         tabcontents[idx].scrollLeft = 1;
         update_pets();
     }
+    else if (tabcontents[idx].id == "skills") {
+        upd();
+    }
 }
 
 window.addEventListener('resize', () => {

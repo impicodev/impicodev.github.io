@@ -54,19 +54,19 @@
         <div id="tab-container">
             <div class="tab-contents active-tab" id="skills">
                 <script>
-                    container = document.getElementById("skills");
+                    skills = document.getElementById("skills");
 
                     function upd() {
-                        var size = container.children[1].clientWidth + 20;
+                        var size = skills.children[1].clientWidth + 20;
                         var perRow = Math.floor((window.innerWidth - 40) / size);
-                        var tiles = container.children.length - 1;
+                        var tiles = skills.children.length - 1;
                         var rows = Math.ceil(tiles / perRow);
                         perRow = Math.ceil(tiles / rows);
-                        container.style.width = `${perRow * (size + 20) - 20}px`;
+                        skills.style.width = `${perRow * (size + 20) - 20}px`;
                     }
 
-                    window.addEventListener('load', upd);
-                    window.addEventListener('resize', upd);
+                    window.addEventListener("load", upd);
+                    window.addEventListener("resize", upd);
                 </script>
                 <div>
                     <img src="img/unity.svg" class="icon inverted">
@@ -117,7 +117,6 @@
                 <img src="img/slug.png">
             </div>
             <div class="tab-contents" id="pets">
-                <img src="img/slug.png" style="background-color: blue;">
                 <img src="img/slug.png">
                 <img src="img/slug.png">
                 <img src="img/slug.png">
@@ -125,7 +124,8 @@
                 <img src="img/slug.png">
                 <img src="img/slug.png">
                 <img src="img/slug.png">
-                <img src="img/slug.png" style="background-color: green;">
+                <img src="img/slug.png">
+                <img src="img/slug.png"">
             </div>
         </div>
 

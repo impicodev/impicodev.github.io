@@ -1,5 +1,4 @@
 var pets = document.getElementById("pets");
-var middle = 0;
 var vel = 0;
 
 function center_dist(idx) {
@@ -38,17 +37,8 @@ pets.addEventListener("pointermove", (event) => {
 pets.addEventListener("scroll", update_pets);
 window.addEventListener("resize", update_pets);
 setInterval(() => {
-    if (vel > 0) vel = Math.max(0, vel-2);
-    else vel = Math.min(0, vel+2);
+    if (vel > 0) vel = Math.max(0, vel - 5);
+    else vel = Math.min(0, vel + 5);
 
-    if (Math.abs(center_dist(middle)) > Math.abs(center_dist(middle + 1))) {
-        console.log("SWITCH MIDDLE");
-        middle++;
-    }
-    else if (Math.abs(center_dist(middle)) > Math.abs(center_dist(middle - 1))) {
-        console.log("SWITCH MIDDLE");
-        middle--;
-    }
-
-    pets.scrollLeft -= vel + center_dist(middle) / 30;
-}, 15);
+    pets.scrollLeft -= vel;
+}, 40);
