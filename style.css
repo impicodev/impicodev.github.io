@@ -351,8 +351,13 @@ body {
         a {
             text-decoration: none;
             color: white;
+            font-weight: 500;
+        }
+        .learn-more {
+            text-decoration: line-through;
             font-size: max(22px, 3vmin);
             font-weight: 500;
+            height: 1px;
             display: table-row;
             vertical-align: bottom;
         }

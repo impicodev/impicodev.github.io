@@ -41,4 +41,4 @@ setInterval(() => {
     else vel = Math.min(0, vel + 5);
 
     pets.scrollLeft -= vel;
-}, 40);
+}, 30);

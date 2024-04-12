@@ -14,7 +14,7 @@ function opentab(_idx) {
 
     event.currentTarget.classList.add("active-link");
     tabcontents[idx].classList.add("active-tab");
-    tabcontainer.style.height = `${tabcontents[idx].scrollHeight}px`;
+    tabcontainer.style.height = `${tabcontents[idx].clientHeight}px`;
     if (tabcontents[idx].id == "pets") {
         tabcontents[idx].scrollLeft = 1;
         update_pets();
