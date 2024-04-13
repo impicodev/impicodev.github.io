@@ -14,7 +14,6 @@ function opentab(_idx) {
 
     event.currentTarget.classList.add("active-link");
     tabcontents[idx].classList.add("active-tab");
-    tabcontainer.style.height = `${tabcontents[idx].clientHeight}px`;
     if (tabcontents[idx].id == "pets") {
         tabcontents[idx].scrollLeft = 1;
         update_pets();
@@ -22,6 +21,7 @@ function opentab(_idx) {
     else if (tabcontents[idx].id == "skills") {
         upd();
     }
+    tabcontainer.style.height = `${tabcontents[idx].clientHeight}px`;
 }
 
 window.addEventListener('resize', () => {
