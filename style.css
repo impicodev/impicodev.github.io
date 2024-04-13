@@ -216,6 +216,11 @@ body {
     font-weight: 600;
     cursor: pointer;
     position: relative;
+    transition: scale 0.2s;
+}
+
+.tab-link:hover {
+    scale: 1.05;
 }
 
 .tab-link::after {
@@ -452,23 +457,6 @@ body {
 
 .project:hover .layer {
     height: 100%;
-}
-
-.btn {
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #ff004f;
-    padding: 14px 35px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: white;
-    transition: 0.5s;
-}
-
-.btn:hover {
-    background: #ff004f;
-    scale: 1.08;
 }
 
 /*----*/

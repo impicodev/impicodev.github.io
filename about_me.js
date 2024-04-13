@@ -25,5 +25,5 @@ function opentab(_idx) {
 }
 
 window.addEventListener('resize', () => {
-    tabcontainer.style.height = `${tabcontents[idx].scrollHeight}px`;
+    tabcontainer.style.height = `${tabcontents[idx].clientHeight}px`;
 });
