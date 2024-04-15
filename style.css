@@ -40,6 +40,10 @@ body {
     filter: invert(100%);
 }
 
+.red-icon {
+    filter: invert(39%) sepia(100%) saturate(6997%) hue-rotate(332deg) brightness(97%) contrast(120%);
+}
+
 .container {
     padding: 10px 3%;
 }
@@ -253,6 +257,24 @@ body {
     gap: 20px;
 }
 
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.5), #990000);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.7s;
+}
+
 #skills {
     margin-left: 50%;
     translate: -50% 0;
@@ -342,7 +364,7 @@ body {
     margin: 60px 0;
 
     div {
-        min-width: 300px;
+        min-width: 400px;
         flex-basis: 30%;
         flex-grow: 1;
         background: #262626;
@@ -388,75 +410,51 @@ body {
 }
 
 /*--PORTFOLIO--*/
-#project-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
 
 .project {
-    border-radius: 10px;
-    position: relative;
     overflow: hidden;
-
-    img {
-        width: 100%;
-        border-radius: 10px;
-        display: block;
-        transition: scale 0.5s;
-    }
-
-    a {
-        margin-top: 20px;
-        color: #ff004f;
-        text-decoration: none;
-        background: white;
-        border-radius: 50%;
-        width: 60px;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        img {
-            width: 32px;
-            /*https://isotropic.co/tool/hex-color-to-css-filter/*/
-            filter: invert(39%) sepia(100%) saturate(6997%) hue-rotate(332deg) brightness(97%) contrast(120%);
-        }
-    }
-
-    h3 {
-        font-weight: 500;
-        margin-bottom: 20px;
-        font-size: 25px;
-    }
-}
-
-.project:hover img {
-    scale: 1.1;
-}
-
-.layer {
-    width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.5), #990000);
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
+    padding: 1vh 3%;
+    margin-top: 20px;
+    background-color: #262626;
+    border-radius: 15px;
+    transition: height 1s;
+}
+
+.project-title {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    transition: height 0.7s;
+    gap: 30px;
+
+    h1 {
+        display: inline-block;
+        font-size: 6vh;
+        font-family: 'monument';
+        color: white;
+    }
 }
 
-.project:hover .layer {
-    height: 100%;
+.project-info {
+    margin-top: 1.05vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    transition: height 1s;
+
+    a {
+        color: white;
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 3vh;
+    }
+
+    img {
+        height: 50vh;
+    }
 }
 
 /*----*/
@@ -471,6 +469,12 @@ body {
 }
 
 /*--MOBILE--*/
+@media only screen and (max-width: 1200px) {
+    .project-info {
+        flex-direction: column-reverse;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .subtitle {
         font-size: 40px;
@@ -540,6 +544,10 @@ body {
         h1 {
             font-size: 12vmin;
         }
+    }
+
+    #pets {
+        height: 50vh;
     }
 
     /*--HOBBIES--*/
