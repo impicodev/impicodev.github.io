@@ -457,6 +457,11 @@ body {
     }
 }
 
+/*--CONTACT ME--*/
+#contact-me {
+    
+}
+
 /*----*/
 #footer {
     width: 100%;
@@ -510,8 +515,8 @@ body {
         background: #ff004f;
         position: fixed;
         top: 0;
-        right: -120px;
-        width: 120px;
+        right: -40vw;
+        width: 40vw;
         height: 100vh;
         padding-top: 50px;
         z-index: 100;

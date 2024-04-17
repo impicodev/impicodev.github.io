@@ -12,6 +12,6 @@ function openmenu() {
 }
 
 function closemenu() {
-    sidemenu.style.right = "-120px";
+    sidemenu.style.right = "-40vw";
     window.removeEventListener("click", clickevent);
 }
