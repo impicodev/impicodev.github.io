@@ -193,7 +193,7 @@ body {
         border-radius: 50%;
     }
 
-    h1 {
+    h1, h2 {
         font-family: 'mono', sans-serif;
         text-shadow: 5px 5px #ff004f;
     }
