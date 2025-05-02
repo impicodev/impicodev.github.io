@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cole - Portfolio</title>
+<!----> <title>Cole - Portfolio</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -20,7 +20,7 @@
         </nav>
         <div id="header" class="container">
             <div id="header-text">
-                <h1 title="but I go by PicoDev online">hey, it's me <span style="color: #ff004f">cole</span></h1>
+<!---->         <h1 title="but I go by PicoDev online">hey, it's me <span style="color: #ff004f">cole</span></h1>
                 <p>competitive programmer &<br>game developer</p>
             </div>
         </div>
@@ -34,16 +34,20 @@
             <h1 class="scroll-left">ABOUT ME</h1>
         </div>
         <div class="container" id="about-info">
-            <img src="img/pfp.jpg">
+<!---->     <img src="img/pfp.jpg">
             <div>
-                <h2>Hello World...</h2>
+<!---->         <h2>Hello World...</h2>
                 <p>
-                    Cole is the name, coding is the game.<br>
+<!---->             <span style="font-size: 32px;"><b>Cole</b> is the name, <b>coding</b> is the game.<br>
                     I'm a competitive programmer, game developer and 3D artist studying computer science at UC Santa Cruz.
-                    When I'm not coding or gaming you can find me frolicking in the forest and swimming at the beach.<br>
-                    Want to see more? Check out my
-                    <a href="https://github.com/impicodev" style="color: #617cff" target="_blank">GitHub</a>!
+                    When I'm not coding or gaming you can find me frolicking in the forest and swimming at the beach.</span><br>
+<!---->             <hr style="margin: 25px">
+                    <i>Want to see more? Check out my...</i>
                 </p>
+<!---->         <ul style="margin-left:40px">
+<!---->             <li><a href="https://github.com/impicodev" style="color: #617cff" target="_blank">GitHub</a></li>
+                    <li><a href="https://itch.io/profile/impicodev" style="color: #617cff" target="_blank">itch.io</a></li>
+                </ul>
             </div>
         </div>
 
@@ -111,9 +115,8 @@
             </div>
             <div class="tab-contents container" id="education">
                 <h1>
-                    UC Santa Cruz class of 2028!
+<!---->             UC Santa Cruz<br>class of 2028
                 </h1>
-                <img src="img/slug.png">
             </div>
         </div>
 
@@ -124,7 +127,7 @@
                 <h2>Game Developer</h2>
                 <p>
                     The only thing better than playing games? Making them.<br><br>
-                    In the world of game development, the only limit is your imagination (and your wallet, perhaps).
+                    In the world of game development, the only limit is your imagination.
                     With a little code, a lot of creativity, and the occasional NullReferenceException, you can bring your wildest dreams to life.<br><br>
                     I currently use Unity and C# for making games, but I'm looking to switch game engines very soon.
                 </p>
@@ -136,19 +139,20 @@
                 <p>
                     Competitive programming is a mental sport where participants solve algorithmic and computational problems within a specified time frame.
                     It involves writing efficient code to solve these problems, often under strict time and memory constraints.<br><br>
-                    Achievements:<br>
-                    <a>USA Computing Olympiad - Platinum</a><br>
-                    <a href="https://codeforces.com/profile/colecancode" target="_blank"style="color: #617cff">CodeForces - Master</a><br>
-                    <a href="https://leetcode.com/colecantcode/" target="_blank" style="color: #617cff">LeetCode - top 0.37%</a><br>
+                    Achievements:
                 </p>
+<!---->         <ol>
+                    <li>USA Computing Olympiad - Platinum</li>
+                    <li><a href="https://codeforces.com/profile/colecancode" target="_blank"style="color: #617cff">CodeForces - Master</a></li>
+                    <li><a href="https://leetcode.com/colecantcode/" target="_blank" style="color: #617cff">LeetCode - top 0.37%</a></li>
+                </ol>
                 <!--<a href="#hobby-list" class="learn-more">Learn more</a>-->
             </div>
             <div>
                 <img src="img/blender.svg" class="icon inverted">
                 <h2>3D Artist</h2>
                 <p>
-                    A true indie dev doesn't just code their assets, they also model them.<br>
-                    All hail Suzanne.<br><br>
+                    A true indie dev doesn't just program their assets, they model them too.<br><br>
 
                     "Now I am become death, destroyer of default cubes"<br>
                     - Oppenheimer, probably
@@ -169,19 +173,14 @@
             <div class="project" id="WEB">
                 <div class="project-title">
                     <img src="img/controller.svg" class="red-icon" style="height: 10vh;">
-                    <h1>War Engine Battlegrounds</h1>
+                    <h1>Snake but it's a 3D Shooter</h1>
                 </div>  
                 <div class="project-info">
                     <p>
-                        
+                        My two friends and I adapted the classic game 'snake' into a 3D shooter, documenting the entire process and turning it into a fast-paced and entertaining YouTube video.
+                        The video, which has over 1.2M views and a sponsor, is the first step towards my goal of creating my own succesfull game development channel.
                     </p>
-                    <iframe width="560" height="315"
-                        src="https://youtu.be/5k0L2h7JgeY?si=u5ttb97LVGoD_NUG"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                    </iframe>
+                    <iframe width="2600" height="330" src="https://www.youtube.com/embed/5k0L2h7JgeY?si=opy1SI9NMU34zjeq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
 
@@ -199,8 +198,6 @@
                         Wordle Solver 2.0 (shown here):<br>
                         A fully automatic program, powered by version 1.0, that will make the guesses for you.
                         It simulates key presses, reads the pixel colors from the screen, runs the 1.0 algorithm, and repeats.<br><br>
-
-                        The code is available <a href="https://github.com/colecancode/WordleBot" target="_blank">here</a>.
                     </p>
                     <video style="width: 50vw" autoplay muted loop>
                         <source src="img/WordleSolver.mp4">
@@ -215,8 +212,8 @@
                 </div>
                 <div class="project-info">
                     <p>
-                        Not much to see here yet...<br>
-                        I'll make a seperate page for these eventually.
+                        These are two of my favorite renders, a spinning donut and some sort of walking Moai head spider... both of which loop seamlessly.<br>
+                        [More renders coming soon]
                     </p>
                     <video style="height: 50vh" autoplay muted loop>
                         <source src="img/Donut.mp4">
@@ -230,7 +227,7 @@
 
         <div id="contact-me">
         </div>
-        <div id="footer">contact me at <a href="mailto:impicodev@gmail.com" style="color:whitesmoke">impicodev@gmail.com</a></div>
+<!----> <div id="footer">contact me at <a href="mailto:impicodev@gmail.com" style="color:whitesmoke">impicodev@gmail.com</a></div>
 
         <script src="menu.js"></script>
         <script src="navbar.js"></script>
@@ -240,3 +237,14 @@
         <script src="projects.js"></script>
     </body>
 </html>
+
+<!--
+TOOLS USED
+operating system: Windows
+text editor: VS Code
+web browser: Chrome
+image editor: pixlr e
+site hosting: github
+
+also note: I marked the lines with relevant criteria
+-->
